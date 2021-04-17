@@ -13,7 +13,7 @@ import { Link, Redirect } from "react-router-dom";
 import Footer from "../navigation/Footer";
 import NavBar from "../navigation/NavBar";
 import Logo from "../navigation/Logo";
-import MainBackground from "./img/main-background.jpg"
+import MainBackground from "./img/main-background.jpg";
 
 function Players() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -57,7 +57,7 @@ function Players() {
             fontWeight: "bold",
           }}
         >
-          Recruit AI: For players
+          Recruit AI: For recruiters
         </h1>
         <h2 style={{ ...hs, marginBottom: "30%" }}>
           Find a better fit<a style={{ color: "#EF7F4D" }}>.</a>
