@@ -16,7 +16,7 @@ fouls_per_32 = []
 
 for i in range(11):
     str_i = str(i)
-    url = "https://www.maxpreps.com/leaders/basketball/,per32/stat-leaders-"+str_i+".htm"
+    url = "https://www.maxpreps.com/leaders/basketball-winter-17-18/,scoring/stat-leaders-"+str_i+".htm"
     page = requests.get( url )
     soup = BeautifulSoup( page.content , 'html.parser')
 
@@ -95,8 +95,4 @@ for i in range(11):
 
 
 df = pd.DataFrame({'Name':name, 'Position': position, 'Minutes': minutes, 'Minutes/Game': minutes_per_game, 'Points/32': points_per_32, 'Assists/32': assists_per_32, 'Rebounds/32': rebounds_per_32, 'Steals/32': steals_per_32, 'turnsover/32': turnovers_per_32, 'Fouls/32': fouls_per_32}) 
-df.to_csv('basketball.csv', index=False, encoding='utf-8')
-
-
-
-
+df.to_csv('basketball-4.csv', index=False, encoding='utf-8')
