@@ -12,8 +12,8 @@ import { Link, Redirect } from "react-router-dom";
 
 import Footer from "../navigation/Footer";
 import NavBar from "../navigation/NavBar";
-
-const MainBackground = null;
+import MainBackground from "./img/main-background.jpg";
+import Logo from "../navigation/Logo";
 
 function Home() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -48,12 +48,21 @@ function Home() {
     };
 
     headerText = (
-      <center>
+      <center style={{ marginTop: "-40%" }}>
         {" "}
-        <h1 style={{ ...hs, fontSize: "xxx-large", marginTop: "-40%" }}>
+        <h1
+          style={{
+            ...hs,
+            fontSize: "xxx-large",
+            fontWeight: "bold",
+          }}
+        >
           Recruit AI
         </h1>
-        <h2 style={{ ...hs, marginBottom: "30%" }}>Find better talent.</h2>
+        <h2 style={{ ...hs, marginBottom: "30%" }}>
+          Find better talent<a style={{ color: "#EF7F4D" }}>.</a>
+        </h2>
+        <hr />
       </center>
     );
   }
@@ -69,15 +78,25 @@ function Home() {
           {MainBackground && (
             <Image
               src={MainBackground}
-              style={{ backgroundSize: "cover", width: "100%" }}
+              style={{
+                backgroundSize: "cover",
+                width: "100%",
+              }}
             />
           )}
           {headerText}
         </div>
-        <br />
-        <h3>What is Recruit AI</h3>
+        <h2>
+          We are the <a style={{ color: "#EF7F4D" }}>first ever</a> College
+          Basketball AIaas.
+        </h2>
         <Jumbotron
-          style={{ padding: "2rem 0.5rem", marginBottom: "1rem" }}
+          style={{
+            padding: "2rem 0.5rem",
+            margin: "1rem 1.2rem",
+            backgroundColor: "#FEFEFE",
+            border: "2px solid #e3e3e3",
+          }}
           fluid
         >
           <Container>

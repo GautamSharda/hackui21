@@ -1,9 +1,27 @@
 .logo {
-    height: 2rem;
-    width: 2rem;
-    margin: 0.1rem;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    justify-content: center;
-    background-image: url("./logo.png");
-  }
+  height: 2rem;
+  width: 2rem;
+  margin: 0.1rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-image: url("./logo.svg");
+}
+
+.footer {
+  height: 100%;
+  vertical-align: top;
+  background-color: #e9bf93;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 14px;
+}
+
+.footer-light {
+  vertical-align: top;
+  color: #363636;
+  font-size: smaller;
+  margin-top: 14px;
+}
