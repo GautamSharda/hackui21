@@ -13,6 +13,7 @@ import { Link, Redirect } from "react-router-dom";
 import Footer from "../navigation/Footer";
 import NavBar from "../navigation/NavBar";
 import MainBackground from "./img/main-background.jpg";
+import Logo from "../navigation/Logo";
 
 function Home() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -47,14 +48,13 @@ function Home() {
     };
 
     headerText = (
-      <center>
+      <center style={{ marginTop: "-40%" }}>
         {" "}
         <h1
           style={{
             ...hs,
             fontSize: "xxx-large",
             fontWeight: "bold",
-            marginTop: "-40%",
           }}
         >
           Recruit AI

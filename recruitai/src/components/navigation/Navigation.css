@@ -5,13 +5,13 @@
   cursor: pointer;
   background-repeat: no-repeat;
   justify-content: center;
-  background-image: url("./logo.png");
+  background-image: url("./logo.svg");
 }
 
 .footer {
   height: 100%;
   vertical-align: top;
-  background-color: #566485;
+  background-color: #e9bf93;
   margin: auto;
   text-align: center;
   font-weight: 400;
