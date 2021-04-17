@@ -12,9 +12,9 @@ function Footer() {
     >
       <center>
         {" "}
-        <p>Counseling and Psychological Services</p>
-        <p>caps@dukekunshan.edu.cn | Rooms CC 2081-2084</p>
-        <a href="https://dukekunshan.edu.cn/en/caps">
+        <p>Recruit Ai</p>
+        <p>More information here</p>
+        <a href="https://pornhub.com">
           <Image
             src={Logo}
             style={{ height: "4rem", marginTop: ".4rem" }}
