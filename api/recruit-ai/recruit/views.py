@@ -17,5 +17,9 @@ def query_college(request, college):
     players = list(College_Player.objects.filter(college=college).values())
     return JsonResponse(players, safe=False)
 
+def all(request):
+    players = list(College_Player.objects.filter().values())
+    return JsonResponse(players, safe=False)
+
 def index(request):
     return HttpResponse("You're looking at question 12")

@@ -41,6 +41,7 @@ class College_Player(models.Model):
 
         msg = College_Player.objects.bulk_create(objs=objs)
 
+# class High_School_Player(models.Model):
 
 
 # College_Player.append_data(pd.read_csv('C:\\Users\\Omkar Yadav\\Documents\\GitHub\\Data Structures\\hackui21\\api\\recruit-ai\\players2020.csv'))
