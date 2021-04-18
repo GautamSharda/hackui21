@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://recruitai.herokuapp.com/api/"; // Link to api
+const baseURL = "localhost:8000/"; // Link to api
 
 const client = axios.create({
   baseURL: baseURL,
@@ -11,22 +11,16 @@ export const getPlayers = async () => {
   const response = await client.get("/players");
   console.log("players", response);
 
-  return response.data.leaders;
+  return response.data;
 };
 
+export const getComparison = async (name) => {
+  const response = await client.get("/comparison/"+name)
+
+  return response.data;
+}
+
 // Post ??
-export const putplayer = async (raw_submission, resultCallback) => {
-  client
-    .put("/players", raw_submission)
-    .then((response) => {
-      console.log("Submission response", response);
-      resultCallback(true);
-    })
-    .catch((error) => {
-      console.log("error", error);
-      resultCallback(false);
-    });
-};
 
 export default {
   getPlayers,
