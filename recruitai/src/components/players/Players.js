@@ -88,8 +88,7 @@ function Players() {
           {headerText}
         </div>
         <h2>
-          We are the <a style={{ color: "#EF7F4D" }}>first ever</a> College
-          Basketball AIaas.
+           <a style={{ color: "#EF7F4D" }}>For Players</a>
         </h2>
         <Jumbotron
           style={{
@@ -102,36 +101,18 @@ function Players() {
         >
           <Container>
             <p style={{ fontWeight: "bold" }}>
-              We are a team of dedicated sports experts looking to use machine
-              learning to simplify the CBB recruiting process.
+              Players looking to find their next big step in their careers can trust Recruit AI.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pellentesque habitant morbi tristique senectus et. Rhoncus urna
-              neque viverra justo nec ultrices dui sapien eget. Eget magna
-              fermentum iaculis eu non. Lorem mollis aliquam ut porttitor leo a
-              diam sollicitudin. Sed turpis tincidunt id aliquet risus feugiat.
-              Volutpat ac tincidunt vitae semper quis lectus. Sed viverra ipsum
-              nunc aliquet bibendum. Blandit volutpat maecenas volutpat blandit
-              aliquam. Eget felis eget nunc lobortis mattis aliquam faucibus.
-              Nunc sed blandit libero volutpat. Convallis tellus id interdum
-              velit laoreet id donec ultrices tincidunt. Donec enim diam
-              vulputate ut.
+              We provide players with our collection of data and resources to 
+              determine their future school. Our Machine Learning Algorithm will take in the players stats and will identify their 
+              top 5 schools. This allows the players to find the optimal setting for their future group.
             </p>
           </Container>
         </Jumbotron>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque
-          aliquam vestibulum morbi blandit cursus risus at ultrices. Nisl purus
-          in mollis nunc sed id. Laoreet id donec ultrices tincidunt arcu non
-          sodales. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
-          Condimentum id venenatis a condimentum vitae sapien pellentesque.
-          Condimentum vitae sapien pellentesque habitant morbi tristique.
-          Accumsan lacus vel facilisis volutpat est. Turpis egestas pretium
-          aenean pharetra magna ac placerat vestibulum. At varius vel pharetra
-          vel turpis. Sem nulla pharetra diam sit amet nisl suscipit adipiscing.
+          After the player inputs their statistical information, we provide them with an individualized player card holding their stats and information. 
+          This will be routinely updated after each high school game and stored into our database. Below is an example of a player card that a user might have.
         </p>
 
         <Card>
@@ -167,51 +148,10 @@ function Players() {
         <br />
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque
-          aliquam vestibulum morbi blandit cursus risus at ultrices. Nisl purus
-          in mollis nunc sed id. Laoreet id donec ultrices tincidunt arcu non
-          sodales. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
+          At Recruit AI, we strive for the success of our future basketball generation, 1 game, 1 shot at a time. 
+          Click on Recruiters to learn more about what resources are enabled for recruiters.
         </p>
-        <h3>FAQ</h3>
-        <Accordion>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              How do I sign up?
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <a href="https://duke.qualtrics.com/jfe/form/SV_ePtZ85N4flD1Njw">
-                  Sign up
-                </a>{" "}
-                Test
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-              More information
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
-                neque aliquam vestibulum morbi blandit cursus risus at ultrices.
-                Nisl purus in mollis nunc sed id. Laoreet id donec ultrices
-                tincidunt arcu non sodales. Ipsum suspendisse ultrices gravida
-                dictum fusce ut placerat.
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="4">
-              More questions:
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="4">
-              <Card.Body>Contact us: gokesT @ github</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion>
+        
         <br />
       </Container>
       <Footer />
