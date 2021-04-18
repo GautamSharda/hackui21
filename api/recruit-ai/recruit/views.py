@@ -35,7 +35,7 @@ def all(request):
     return JsonResponse(players, safe=False)
 
 def get_player_comparison(request, name):
-    hs_data = pd.read_csv("/Users/omkaryadav/Documents/GitHub/hackui21/api/recruit-ai/ml/data/hs_data_clean.csv").to_numpy()
+    hs_data = pd.read_csv("recruit/hs_data_clean.csv").to_numpy()
     print(hs_data.shape)
 
 
