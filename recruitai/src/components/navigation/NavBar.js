@@ -15,8 +15,11 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav>
-            <Nav.Link as={Link} to="/subpage">
-              Tasks
+            <Nav.Link as={Link} to="/players">
+              Players
+            </Nav.Link>
+            <Nav.Link as={Link} to="/recruiters">
+              Recruiters
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
