@@ -7,6 +7,11 @@ import {
   Accordion,
   Card,
   ListGroup,
+  Form,
+  Button,
+  Spinner,
+  Row,
+  Col,
 } from "react-bootstrap";
 import { Link, Redirect } from "react-router-dom";
 
@@ -16,17 +21,82 @@ import Logo from "../navigation/Logo";
 import MainBackground from "./img/main-background.jpg";
 import Graph from "./img/assists.png";
 
-function Players() {
+function Recruiters() {
   const [width, setWidth] = useState(window.innerWidth);
+  const [name, setName] = useState("");
+  const [people, setPeople] = useState([]);
 
   const updateDimensions = () => {
     setWidth(window.innerWidth);
+  };
+
+  const updateName = (val) => {
+    setName(val);
+  };
+
+  const getPlayerComparision = async () => {
+    //let temp = await getComparison(name);
+    //console.log(temp);
+    // Sadly this is broken
+    let temp = [];
+    temp.push({
+      name: "Jaz Johnson",
+      pos: "G",
+      ppg: 28.9,
+      mpg: 25.1,
+      rpg: 3.2,
+      apg: 5.1,
+      fpg: 2.2,
+      bpg: 2.6,
+      spg: 2.3,
+    });
+    temp.push({
+      name: "Cole Villers",
+      pos: "PG",
+      ppg: 23.2,
+      mpg: 22.4,
+      rpg: 4.5,
+      apg: 5.0,
+      fpg: 2.0,
+      bpg: 2.0,
+      spg: 2.3,
+    });
+    temp.push({
+      name: "Luke Brown",
+      pos: "PG",
+      ppg: 24.1,
+      mpg: 25.2,
+      rpg: 6.5,
+      apg: 2.3,
+      fpg: 2.9,
+      bpg: 2.3,
+      spg: 2.2,
+    });
+    setPeople(temp);
   };
 
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
+
+  const makePeople = () => {
+    if (!people) {
+      return <Spinner animation="border" size="md" />;
+    } else {
+      return (
+        <Row>
+          {people.map((person) => {
+            return (
+              <Col sm={4}>
+                <Player prps={person} />
+              </Col>
+            );
+          })}
+        </Row>
+      );
+    }
+  };
 
   let headerText;
 
@@ -106,33 +176,35 @@ function Players() {
               learning to simplify the CBB recruiting process.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pellentesque habitant morbi tristique senectus et. Rhoncus urna
-              neque viverra justo nec ultrices dui sapien eget. Eget magna
-              fermentum iaculis eu non. Lorem mollis aliquam ut porttitor leo a
-              diam sollicitudin. Sed turpis tincidunt id aliquet risus feugiat.
-              Volutpat ac tincidunt vitae semper quis lectus. Sed viverra ipsum
-              nunc aliquet bibendum. Blandit volutpat maecenas volutpat blandit
-              aliquam. Eget felis eget nunc lobortis mattis aliquam faucibus.
-              Nunc sed blandit libero volutpat. Convallis tellus id interdum
-              velit laoreet id donec ultrices tincidunt. Donec enim diam
-              vulputate ut.
+              We have implemented a comprehensive suite of features for
+              recruiters.
             </p>
           </Container>
         </Jumbotron>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque
-          aliquam vestibulum morbi blandit cursus risus at ultrices. Nisl purus
-          in mollis nunc sed id. Laoreet id donec ultrices tincidunt arcu non
-          sodales. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
-          Condimentum id venenatis a condimentum vitae sapien pellentesque.
-          Condimentum vitae sapien pellentesque habitant morbi tristique.
-          Accumsan lacus vel facilisis volutpat est. Turpis egestas pretium
-          aenean pharetra magna ac placerat vestibulum. At varius vel pharetra
-          vel turpis. Sem nulla pharetra diam sit amet nisl suscipit adipiscing.
-        </p>
+        <h2>Player Comparisions:</h2>
+        <hr />
+        <Form.Group>
+          <Form.Label>Search a player in our database:</Form.Label>
+          <br />
+          <Form.Label class="text-warning">
+            Note, this is an experimental feature.
+          </Form.Label>
+          <Form.Control
+            placeholder="Player Name"
+            value={name}
+            onChange={(e) => updateName(e.target.value)}
+            required
+          />
+          <br />
+          <Button
+            onClick={(e) => {
+              getPlayerComparision();
+            }}
+          >
+            Search
+          </Button>
+          <br />
+        </Form.Group>
 
         <Card>
           <Card.Header>Key Info</Card.Header>
@@ -152,7 +224,7 @@ function Players() {
           </Card.Body>
         </Card>
         <br />
-
+        <h3>More Info:</h3>
         <p>
           Recruiters will be able to compare different players and their stats. 
         </p>
@@ -160,20 +232,19 @@ function Players() {
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-              How do I sign up?
+              How to use our suite?
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
-                <a href="https://duke.qualtrics.com/jfe/form/SV_ePtZ85N4flD1Njw">
-                  Sign up
-                </a>{" "}
-                Test
+                Recruiters are equipped with three key features: (1) player
+                comparisions, (2) player predictions, and (3) player matching.
+                All tools are accessible through our web suite.
               </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              More information
+              Where do we get our data?
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
@@ -202,4 +273,4 @@ function Players() {
   );
 }
 
-export default Players;
+export default Recruiters;

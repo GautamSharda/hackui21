@@ -145,25 +145,22 @@ function Players() {
               <a style={{ fontWeight: "bold" }}>Games</a>: 33
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Minutes</a>: 30.0
+              <a style={{ fontWeight: "bold" }}>Minutes/Game</a>: 30.0
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Minutes/Game</a>: 8.9
-            </Card.Text>
-            <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Rebounds/Game</a>: 2.1
+              <a style={{ fontWeight: "bold" }}>Rebounds/Game</a>: 8.9
             </Card.Text>
             <Card.Text>
               <a style={{ fontWeight: "bold" }}>Assists/Game</a>: 2.1
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 1.8
+              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 2.1
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 1.8
+              <a style={{ fontWeight: "bold" }}>Blocks/Game</a>: 2.8
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 1.8
+              <a style={{ fontWeight: "bold" }}>Points/Game</a>: 1.8
             </Card.Text>
           </Card.Body>
         </Card>
