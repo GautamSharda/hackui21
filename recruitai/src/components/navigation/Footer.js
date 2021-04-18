@@ -1,7 +1,7 @@
 import "./Navigation.css";
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import Logo from "./logo.png";
+import Logo from "./logo.svg";
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
         {" "}
         <p>Recruit Ai</p>
         <p>More information here</p>
-        <a href="https://pornhub.com">
+        <a href="https://gokul.com">
           <Image
             src={Logo}
             style={{ height: "4rem", marginTop: ".4rem" }}
