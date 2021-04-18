@@ -14,6 +14,7 @@ import Footer from "../navigation/Footer";
 import NavBar from "../navigation/NavBar";
 import Logo from "../navigation/Logo";
 import MainBackground from "./img/main-background.jpg";
+import Graph from "./img/assists.png";
 
 function Players() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -137,25 +138,23 @@ function Players() {
           <Card.Header>Key Info</Card.Header>
           <Card.Body>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Sign-up</a>: please give us
-              money
-            </Card.Text>
-            <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Techinieuq</a>: test
-            </Card.Text>
-            <Card.Text>
-              <a style={{ fontWeight: "bold" }}>TEst</a>: test
+            <div>
+              {Graph && (
+                <Image
+                  src={Graph}
+                  style={{
+                    width: "100%",
+                  }}
+                />
+              )}
+        </div>
             </Card.Text>
           </Card.Body>
         </Card>
         <br />
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque
-          aliquam vestibulum morbi blandit cursus risus at ultrices. Nisl purus
-          in mollis nunc sed id. Laoreet id donec ultrices tincidunt arcu non
-          sodales. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
+          Recruiters will be able to compare different players and their stats. 
         </p>
         <h3>FAQ</h3>
         <Accordion>
