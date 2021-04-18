@@ -14,6 +14,7 @@ import Footer from "../navigation/Footer";
 import NavBar from "../navigation/NavBar";
 import Logo from "../navigation/Logo";
 import MainBackground from "./img/main-background.jpg"
+import Zion from "./img/zionpic.jpg"
 
 function Players() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -134,17 +135,35 @@ function Players() {
         </p>
 
         <Card>
-          <Card.Header>Key Info</Card.Header>
+          <Card.Header>Zion Williamson</Card.Header>
           <Card.Body>
+            <Card.Img variant="top" src={Zion}/>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Sign-up</a>: please give us
-              money
+              <a style={{ fontWeight: "bold" }}>College</a>: Duke
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Techinieuq</a>: test
+              <a style={{ fontWeight: "bold" }}>Games</a>: 33
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>TEst</a>: test
+              <a style={{ fontWeight: "bold" }}>Minutes</a>: 30.0
+            </Card.Text>
+            <Card.Text>
+              <a style={{ fontWeight: "bold" }}>Minutes/Game</a>: 8.9
+            </Card.Text>
+            <Card.Text>
+              <a style={{ fontWeight: "bold" }}>Rebounds/Game</a>: 2.1
+            </Card.Text>
+            <Card.Text>
+              <a style={{ fontWeight: "bold" }}>Assists/Game</a>: 2.1
+            </Card.Text>
+            <Card.Text>
+              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 1.8
+            </Card.Text>
+            <Card.Text>
+              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 1.8
+            </Card.Text>
+            <Card.Text>
+              <a style={{ fontWeight: "bold" }}>Steals/Game</a>: 1.8
             </Card.Text>
           </Card.Body>
         </Card>
