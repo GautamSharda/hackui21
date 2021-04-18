@@ -88,7 +88,7 @@ function Home() {
         </div>
         <h2>
           We are the <a style={{ color: "#EF7F4D" }}>first ever</a> College
-          Basketball AIaas.
+          Basketball AIaaS.
         </h2>
         <Jumbotron
           style={{
@@ -105,57 +105,41 @@ function Home() {
               learning to simplify the CBB recruiting process.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pellentesque habitant morbi tristique senectus et. Rhoncus urna
-              neque viverra justo nec ultrices dui sapien eget. Eget magna
-              fermentum iaculis eu non. Lorem mollis aliquam ut porttitor leo a
-              diam sollicitudin. Sed turpis tincidunt id aliquet risus feugiat.
-              Volutpat ac tincidunt vitae semper quis lectus. Sed viverra ipsum
-              nunc aliquet bibendum. Blandit volutpat maecenas volutpat blandit
-              aliquam. Eget felis eget nunc lobortis mattis aliquam faucibus.
-              Nunc sed blandit libero volutpat. Convallis tellus id interdum
-              velit laoreet id donec ultrices tincidunt. Donec enim diam
-              vulputate ut.
+              After observing Iowa's horrendus 2nd round exit against Oregon,
+              our team of passionate sports experts decided on one goal: 
+              To make sure college basketball recruiting is 
+              fair and accurate to all schools. 
+              We as a group disagree on the current state of basketball recruiting which is why
+              we have created Recruit AI. We specifically target high school 
+              athletes who are eager to advance to the next level of their career
             </p>
           </Container>
         </Jumbotron>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque
-          aliquam vestibulum morbi blandit cursus risus at ultrices. Nisl purus
-          in mollis nunc sed id. Laoreet id donec ultrices tincidunt arcu non
-          sodales. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
-          Condimentum id venenatis a condimentum vitae sapien pellentesque.
-          Condimentum vitae sapien pellentesque habitant morbi tristique.
-          Accumsan lacus vel facilisis volutpat est. Turpis egestas pretium
-          aenean pharetra magna ac placerat vestibulum. At varius vel pharetra
-          vel turpis. Sem nulla pharetra diam sit amet nisl suscipit adipiscing.
+          We use Machine Learning techniques to analyze decades worth of college basketball data. 
+          Using the data, we are able to identify the best fit schools 
+          for each individual high school athlete.
+          Below are some examples of Recruit AI could do for you!
         </p>
 
         <Card>
-          <Card.Header>Key Info</Card.Header>
+          <Card.Header>How to Connect</Card.Header>
           <Card.Body>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Sign-up</a>: please give us
-              money
+              <a style={{ fontWeight: "bold" }}>Sign-up</a>: Follow the sign-up link down below to get started!
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>Techinieuq</a>: test
+              <a style={{ fontWeight: "bold" }}>T</a>: Payment: We will contact you with payment options after completion of signing up
             </Card.Text>
             <Card.Text>
-              <a style={{ fontWeight: "bold" }}>TEst</a>: test
+              <a style={{ fontWeight: "bold" }}>T</a>: test
             </Card.Text>
           </Card.Body>
         </Card>
         <br />
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque
-          aliquam vestibulum morbi blandit cursus risus at ultrices. Nisl purus
-          in mollis nunc sed id. Laoreet id donec ultrices tincidunt arcu non
-          sodales. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
+          Some benefits of using Recruit AI:
         </p>
         <h3>FAQ</h3>
         <Accordion>
@@ -168,22 +152,18 @@ function Home() {
                 <a href="https://duke.qualtrics.com/jfe/form/SV_ePtZ85N4flD1Njw">
                   Sign up
                 </a>{" "}
-                Test
+                Use this button to sign up for Recruit AI
               </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              More information
+              Who can use Recruit AI?
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
-                neque aliquam vestibulum morbi blandit cursus risus at ultrices.
-                Nisl purus in mollis nunc sed id. Laoreet id donec ultrices
-                tincidunt arcu non sodales. Ipsum suspendisse ultrices gravida
-                dictum fusce ut placerat.
+                Whether you are a college recruiter, a high school athlete, or just passionate about college basketball,
+                 Recruit AI caters to all lovers of the game.
               </Card.Body>
             </Accordion.Collapse>
           </Card>
