@@ -21,9 +21,9 @@ def evaluate(y_hat, y):
 
 
 # Simple Least Squares to compare to our nn
-# shuffle_dataset   Boolean       
+# shuffle_dataset   Boolean
 # test_pct          Percent of test samples
-# data              Numpy arrat
+# data              Numpy array
 def regress(shuffle_dataset, test_pct, data):
     print('Results using Least squares:')
 
@@ -43,7 +43,9 @@ def regress(shuffle_dataset, test_pct, data):
 
     # Create two matricies with the x features and labels respectively
     x_data = np.array(np.array(np.delete(data, -2, 1)[:, :], dtype='float32'))
-    y_data = np.array(np.array(data[:, -2], dtype='int64'))
+    y_data = np.array(np.array(data[:, -2], dtype='float32'))
+
+    print("inside",  y_data)
 
     # Assign data to train / test
     train_x = x_data[train_indices]
@@ -64,3 +66,5 @@ def regress(shuffle_dataset, test_pct, data):
     evaluate(yh_train, y_train)
     print("Test Data:")
     evaluate(yh, y_test)
+
+    return xh
